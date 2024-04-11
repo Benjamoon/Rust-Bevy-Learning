@@ -1,0 +1,9 @@
+ECS = Entity Component System
+
+Entity -> Unique ID that we attach components to
+Component -> A peice of data
+System -> Something that acts on data
+
+Why?
+Systems can run in parralel
+Beterr than OOP because it litteraly models IRL objects lol
