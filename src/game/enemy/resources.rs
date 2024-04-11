@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 
-pub const ENEMY_SPAWN_INTERVAL: f32 = 5.0;
+pub const ENEMY_SPAWN_INTERVAL: f32 = 1.0;
 
 
 

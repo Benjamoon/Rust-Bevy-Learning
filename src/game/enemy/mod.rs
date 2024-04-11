@@ -39,7 +39,10 @@ impl Plugin for EnemyPlugin {
             )
             .add_systems(
                 Update,
-                (tick_enemy_spawn_timer, spawn_enemies_over_time)
+                (
+                    tick_enemy_spawn_timer,
+                    spawn_enemies_over_time
+                )
                     .run_if(in_state(AppState::Game))
                     .run_if(in_state(SimulationState::Running)),
             )

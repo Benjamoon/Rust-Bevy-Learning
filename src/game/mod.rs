@@ -6,15 +6,18 @@ pub mod score;
 pub mod star;
 mod systems;
 mod ui;
+mod bullet;
 
 use enemy::EnemyPlugin;
 use player::PlayerPlugin;
 use score::ScorePlugin;
 use star::StarPlugin;
 use ui::GameUIPlugin;
+use bullet::BulletPlugin;
 use systems::*;
 
 use crate::{events::GameOver, AppState};
+
 
 
 pub struct GamePlugin;
@@ -30,7 +33,8 @@ impl Plugin for GamePlugin {
                 PlayerPlugin,
                 ScorePlugin,
                 StarPlugin,
-                GameUIPlugin
+                GameUIPlugin,
+                BulletPlugin
             ))
 
             // On enter
